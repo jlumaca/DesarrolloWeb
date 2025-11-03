@@ -1,0 +1,71 @@
+body{
+    /* Colores y estilos del body */
+    background-color: #B8D176;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    /* Para que el footer quede debajo */
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* Tamaño maximo del main */
+main {
+    flex: 1; 
+}
+/* Colores y estilos del header (colores,espaciado de logo y menu,etc) */
+header{
+    background-color: #356EA5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+/* Tamaño logo CIPLA */
+header img {
+    height: 60px;
+}
+/* Ubicacion del texto del nav del header a la derecha */
+header nav{
+    text-align: right;
+}
+li{
+    display: inline;
+    background-color: #B8D176;
+    
+}
+/* Estilos de etiqueta a */
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+/* Etiquetas hipervinculo del nav que esten alineados */
+header nav ul{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+/* Centrar todos los h1 */
+h1{
+    text-align: center;
+}
+
+/* Letra en Negrita para datos de contacto */
+span{
+    font-weight: bold;
+}
+
+/* Estilos (color,tamaño,etc) del Footer */
+footer{
+    background-color: #356EA5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Tamaño de las img del section de index.html */
+.fachada{
+    height: 40%;
+    width: 40%;
+}
