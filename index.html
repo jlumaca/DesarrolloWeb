@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,18 +14,27 @@
 <body>
     <header>
         <img src="img/logo.jpg">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" id="item_1">Inicio</a>
-                </li>
-                <li>
-                    <a href="pages/servicios.html" id="item_3">Servicios</a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html" id="item_3">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- BOTÓN HAMBURGUESA -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -34,11 +44,13 @@
         </p>
     </main>
     <section>
-        <h3>Nuestro centro</h3>
-        <img src="img/fachada.jpg" class="fachada">
-        <img src="img/fachada2.jpg" class="fachada">
-        <h3>Nuestro equipo</h3>
-        <img src="img/equipo.png">
+        <div id="div_section_index">
+            <h3>Nuestro centro</h3>
+            <img src="img/fachada.jpg" class="fachada">
+            <img src="img/fachada2.jpg" class="fachada">
+            <h3>Nuestro equipo</h3>
+            <img class="equipo" src="img/equipo.png">
+        </div>
     </section>
     <footer>
         <p>¡Visitanos en Instagram y Facebook!</p>
@@ -46,5 +58,6 @@
         <a href="https://www.facebook.com/ciplaciudaddelplata" target="_blank"><img src="img/fb.png"></a>
         <p>Todos los derechos reservados &copy; CIPLA</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
