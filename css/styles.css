@@ -103,13 +103,22 @@ footer{
     background-color: #255A8A;
     color: white;
     text-align: center;
-    padding: 0 0;
-    flex-shrink: 0;
+    padding: 20px 0;
 }
 
-footer a img{
-    width: 3%;
+footer .social{
+    display: grid;
+    grid-template-columns: repeat(2, 24px);
+    gap: 12px;
+    justify-content: center;
+    margin: 15px auto;
 }
+
+footer .social img{
+    width: 30px;
+    height: 30px;
+}
+
 
 #div_section_index{
     text-align: center;
@@ -185,8 +194,9 @@ footer p{
         margin-top: 10px;
     }
 
-    footer a img{
-        width: 10%;
+    footer .social{
+        grid-template-columns: repeat(2, 24px);
     }
+
 
 }
