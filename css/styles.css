@@ -25,7 +25,7 @@ main {
     flex: 1 0 auto;
     margin-left: 20px;
     min-height: 0;
-    padding-bottom: 0; /* o ajustá padding inferior */
+    padding-bottom: 0; 
     margin-bottom: 0;
 }
 /* Colores y estilos del header (colores,espaciado de logo y menu,etc) */
@@ -40,8 +40,6 @@ header{
 }
 section{
     margin-left: 20px;
-   
-    
     padding-top: 0;
     margin-top: 0;
 }
@@ -81,10 +79,18 @@ nav a {
 nav a:hover {
     background: #a6bf68;
 }
-/* Centrar todos los h1 */
+/* Estilos h1 */
 h1{
     margin-top: 10PX;
     text-align: center;
+    font-weight: bold;   
+}
+
+h3{
+    font-weight: bold;   
+}
+.span_h1{
+    border-bottom: solid 5px #577685;
 }
 
 /* Letra en Negrita para datos de contacto */
@@ -97,26 +103,36 @@ footer{
     background-color: #356EA5;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 0 0;
     flex-shrink: 0;
 }
 
+#div_section_index{
+    text-align: center;
+}
+
 /* Tamaño de las img del section de index.html */
-.fachada{
+.fachada, .equipo{
     height:auto;
     width: 40%;
     margin-right: 20px;
-    align-items: center;
-    
-}
-/* Estilos imágen de "Nuestro equipo" */
-.equipo {
-    height:auto;
-    width: 40%;
     margin-bottom: 20px;
 }
+
 img{
     border-radius: 20px;
+}
+
+#section_contacto{
+    margin-top: 20px;
+}
+
+iframe{
+    text-align: center;
+}
+
+#section_bps{
+    text-align: center;
 }
 
 /* Estilos versión Mobile */
@@ -131,11 +147,11 @@ img{
     main{
         flex:1;
         margin-right: 20px;
+        margin-left: 20px;
         min-height: 200px;
     }
     .fachada, .equipo, .bps{
         display: block;  
-        margin-bottom: 20px;
         margin: 0 auto 20px auto;
     }
     .fachada, .equipo{
@@ -150,9 +166,8 @@ img{
         height:300px; 
         display:block;
     }
-    #div_main_contacto{
-        margin-top:10px;
-        align-items: left;
+    #section_contacto{
+        margin-top: 10px;
     }
 
 }
