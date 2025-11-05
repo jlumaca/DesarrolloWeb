@@ -1,3 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    height:100%;
+}
+
+
 body{
     /* Colores y estilos del body */
     background-color: #B8D176;
@@ -11,8 +21,12 @@ body{
 }
 /* Tamaño maximo del main */
 main {
-    flex: 1; 
+    flex:1;
+    flex: 1 0 auto;
     margin-left: 20px;
+    min-height: 0;
+    padding-bottom: 0; /* o ajustá padding inferior */
+    margin-bottom: 0;
 }
 /* Colores y estilos del header (colores,espaciado de logo y menu,etc) */
 header{
@@ -20,11 +34,16 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
-
+    margin-top: 0;
+    padding: 20px 0;  
+    box-sizing:border-box;
 }
 section{
     margin-left: 20px;
+   
+    
+    padding-top: 0;
+    margin-top: 0;
 }
 /* Tamaño logo CIPLA */
 header img {
@@ -40,21 +59,25 @@ nav{
 nav ul {
     list-style: none;
     padding: 0;
-    
-    display: flex;         /* para que queden en fila */
-    gap: 20px;             /* separación entre items */
-}
 
+    display: flex;
+    gap: 20px;
+    white-space: nowrap; /* ← acá */
+}
+/* Estilos de los hipervinculos (color, bordeado, etc) */
 nav a {
-    display: block;                /* esto hace toda el área clickeable */
+    display: block;               
     padding: 10px 25px;
-    background: #b7cc7a;           /* tu verde corporativo */
-    border: 2px solid #244e74;     /* borde azul más oscuro */
-    color: #0b1b2b;                /* texto azul muy oscuro */
+    background: #b7cc7a;          
+    border: 2px solid #244e74;     
+    color: #0b1b2b;                
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
+    white-space: nowrap;
+    line-height: 1;
 }
+/* Cambia de color al colocar la flecha encima del hipervinculo */
 nav a:hover {
     background: #a6bf68;
 }
@@ -75,25 +98,27 @@ footer{
     color: white;
     text-align: center;
     padding: 10px 0;
+    flex-shrink: 0;
 }
 
 /* Tamaño de las img del section de index.html */
 .fachada{
-    height: 40%;
+    height:auto;
     width: 40%;
     margin-right: 20px;
     align-items: center;
 }
+/* Estilos imágen de "Nuestro equipo" */
 .equipo {
-    height: 40%;
+    height:auto;
     width: 40%;
     margin-bottom: 20px;
 }
 
+/* Estilos versión Mobile */
 @media (max-width: 480px) {
     body{
         background-color: #B8D176;
-        height: 100%; 
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -102,11 +127,15 @@ footer{
     main{
         flex:1;
         margin-right: 20px;
+        min-height: 200px;
     }
     .fachada, .equipo, .bps{
         display: block;  
         margin-bottom: 20px;
         margin: 0 auto 20px auto;
+    }
+    .fachada, .equipo{
+        width: 40%;
     }
     #div_section_index{
         margin: 0 auto 20px auto;
