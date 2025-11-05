@@ -50,7 +50,7 @@ header img {
     border-radius: 50px;
 }
 nav{
-    background:#356EA5;
+    background:#255A8A;
     margin-right: 20px;
 }
 /* Ubicacion del texto del nav del header a la derecha */
@@ -66,7 +66,7 @@ nav ul {
 nav a {
     display: block;               
     padding: 10px 25px;
-    background: #b7cc7a;          
+    background: #8BC34A;       
     border: 2px solid #244e74;     
     color: #0b1b2b;                
     text-decoration: none;
@@ -118,7 +118,7 @@ footer a img{
 /* Tamaño de las img del section de index.html */
 .fachada, .equipo{
     height:auto;
-    width: 40%;
+    width: 20%;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -132,11 +132,23 @@ img{
 }
 
 iframe{
-    text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 #section_bps{
     text-align: center;
+}
+#h3_contacto,p{
+    margin: 10px auto;
+    width: min(600px, 90%);
+    text-align: left;
+}
+
+footer p{
+    width: 100%;
+    text-align: center;
+    margin: 0; /* opcional para que quede bien alineado */
 }
 
 /* Estilos versión Mobile */
@@ -171,6 +183,10 @@ iframe{
     }
     #section_contacto{
         margin-top: 10px;
+    }
+
+    footer a img{
+        width: 10%;
     }
 
 }
