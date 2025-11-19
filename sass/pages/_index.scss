@@ -1,0 +1,150 @@
+.card_nuestro_equipo {
+    background: #9ABD70;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#h3_consulta {
+        text-align: center;
+        font-size: 2rem;
+        color: #2f3b1f;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+
+img {
+    border-radius: 10px;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 650px;
+  margin: 20px auto 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+
+.carousel input[type="radio"] {
+  display: none;
+}
+
+
+.carousel .slides {
+  display: flex;
+  width: 200%;              
+  transition: transform 0.45s ease;
+  transform: translateX(0);  
+}
+
+
+.carousel .slide {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+
+.carousel .slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 6; 
+}
+
+.carousel .control-nav {
+  text-align: center;
+  margin-top: 10px;
+}
+.carousel .control-nav label {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.carousel .control-nav label:hover { background:#999; }
+
+
+#slide1a:checked ~ .slides { transform: translateX(0%); }    
+#slide2a:checked ~ .slides { transform: translateX(-50%); }  
+
+
+#slide1a:checked ~ .control-nav label[for="slide1a"],
+#slide2a:checked ~ .control-nav label[for="slide2a"] {
+  background: #666;
+}
+
+#nuestro-equipo {
+    width: 95%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+
+
+.card-equipo {
+    background: #9ABD70;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    transition: transform .25s, box-shadow .25s;
+}
+
+.card-equipo:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+
+.card-img img {
+    width: 100%;
+    aspect-ratio: 4/3; 
+    object-fit: cover;
+}
+
+
+.card-body {
+    padding: 18px;
+}
+
+.card-nombre {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.card-cargo {
+    margin: 4px 0 10px;
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.card-desc {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}

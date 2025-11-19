@@ -1,0 +1,108 @@
+#section_consulta {
+    background: #9ABD70; 
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 90%;
+    margin: 2rem auto;
+
+    #h3_consulta {
+        text-align: center;
+        font-size: 2rem;
+        color: #2f3b1f;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+    }
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        .group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+
+            label {
+                font-size: 1.05rem;
+                font-weight: 600;
+                color: #2d2d2d;
+            }
+
+            input,
+            textarea {
+                font-family: "Roboto", sans-serif;
+                font-size: 1rem;
+                padding: 0.8rem 1rem;
+                border-radius: 10px;
+                border: 2px solid #b6c98b;
+                background: #ffffff;
+                transition: all .25s ease;
+
+                &:focus {
+                    outline: none;
+                    border-color: #7ea34e;
+                    box-shadow: 0 0 6px rgba(126,163,78,.4);
+                }
+
+                &::placeholder {
+                    color: #8b8b8b;
+                    font-style: italic;
+                }
+            }
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+
+            .btn-send,
+            .btn-reset {
+                font-size: 1rem;
+                padding: 0.75rem 1.5rem;
+                border-radius: 12px;
+                border: none;
+                cursor: pointer;
+                font-weight: 600;
+                transition: all .25s ease;
+            }
+
+            .btn-send {
+                background: #6f9448;
+                color: #fff;
+
+                &:hover {
+                    background: #5b7a3a;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 8px rgba(0,0,0,.25);
+                }
+            }
+
+            .btn-reset {
+                background: #dedede;
+                color: #333;
+
+                &:hover {
+                    background: #c9c9c9;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+                }
+            }
+        }
+    }
+}
+
+.card_contacto, .card_nuestros_datos {
+    background: #9ABD70;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}

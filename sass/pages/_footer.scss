@@ -1,0 +1,78 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+footer {
+  background-color: $color-header;
+  color: white;
+  text-align: center;
+
+  padding: $footer-padding-vertical 0;
+  font-size: $footer-font-size;
+  line-height: 1.25;
+  flex-shrink: 0;
+
+  .footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    h4 {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+
+      &:hover {
+        opacity: 1;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+
+    img {
+      width: 28px;
+      height: 28px;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .footer-col {
+      align-items: center;
+    }
+  }
+}
+
