@@ -456,6 +456,19 @@ iframe {
   margin-bottom: 100px;
 }
 
+#section_bps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+#section_bps img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 main {
   flex: 1 0 auto;
   margin-left: 20px;
