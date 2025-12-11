@@ -2,6 +2,11 @@
 @use "variables" as *;
 
 @include tablet {
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
     body {
         background-color: $color-bg;
@@ -11,7 +16,7 @@
     }
 
     main {
-        flex: 1;
+        flex: 1 0 auto;
         margin-left: 30px;     // ejemplo para tablet
         margin-right: 30px;
         min-height: 250px;
@@ -41,5 +46,8 @@
 
     .card_nuestros_datos {
         margin-top: 40%;
+    }
+    footer {
+        flex-shrink: 0;
     }
 }
