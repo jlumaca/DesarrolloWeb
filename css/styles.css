@@ -613,6 +613,11 @@ section {
 }
 
 @media (max-width: 480px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   body {
     background-color: #a1e091;
     display: flex;
@@ -620,8 +625,11 @@ section {
     min-height: 100vh;
   }
   main {
-    flex: 1;
+    flex: 1 0 auto;
     min-height: 200px;
+  }
+  footer {
+    flex-shrink: 0;
   }
   .fachada,
   .equipo {
@@ -641,13 +649,20 @@ section {
     margin-top: 10px;
   }
   .card_nuestro_equipo {
-    margin-top: 150px;
+    margin-top: 10px;
   }
   .card_nuestros_datos {
-    margin-top: 70%;
+    margin-top: 5%;
   }
   .card_servicios_1 {
-    margin-bottom: 50%;
+    margin-bottom: 2rem;
+  }
+  #section_bps {
+    flex-direction: column;
+  }
+  #section_bps img {
+    width: 80%;
+    max-width: 300px;
   }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
