@@ -23,3 +23,65 @@
         border-radius: 8px; // Si querés bordes redondeados como efecto
     }
 }
+.carousel_actividades {
+  width: 100%;
+  max-width: 650px;
+  margin: 20px auto 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel_actividades input[type="radio"] {
+  display: none;
+}
+
+.carousel_actividades .slides_act {
+  display: flex;
+  width: 500%;              
+  transition: transform 0.45s ease;
+}
+
+.carousel_actividades .slide_act {
+  flex: 0 0 20%;
+  width: 20%;
+}
+
+.carousel_actividades .slide_act img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 16 / 6; 
+}
+
+.carousel_actividades .control-nav-act {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel_actividades .control-nav-act label {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel_actividades .control-nav-act label:hover { background:#999; }
+
+#slide1b:checked ~ .slides_act { transform: translateX(0%); }
+#slide2b:checked ~ .slides_act { transform: translateX(-20%); }
+#slide3b:checked ~ .slides_act { transform: translateX(-40%); }
+#slide4b:checked ~ .slides_act { transform: translateX(-60%); }
+#slide5b:checked ~ .slides_act { transform: translateX(-80%); }
+
+#slide1b:checked ~ .control-nav-act label[for="slide1b"],
+#slide2b:checked ~ .control-nav-act label[for="slide2b"],
+#slide3b:checked ~ .control-nav-act label[for="slide3b"],
+#slide4b:checked ~ .control-nav-act label[for="slide4b"],
+#slide5b:checked ~ .control-nav-act label[for="slide5b"] {
+  background: #666;
+}
