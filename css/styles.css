@@ -324,6 +324,18 @@ html {
   transform: scale(0.95);
 }
 
+.card_nuestro_equipo {
+  background: #9ABD70;
+  padding: 2rem;
+  margin-top: 1px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
 header {
   background-color: #356EA5;
   display: flex;
@@ -362,18 +374,6 @@ header nav a {
 }
 header nav a:hover {
   background: #FBC02D;
-}
-
-.card_nuestro_equipo {
-  background: #9ABD70;
-  padding: 2rem;
-  margin-top: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
 }
 
 #h3_consulta {
@@ -456,7 +456,7 @@ img {
 #nuestro-equipo {
   width: 95%;
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 10px auto;
 }
 
 .titulo-seccion {
