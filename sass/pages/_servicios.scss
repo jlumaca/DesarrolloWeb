@@ -14,13 +14,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem; // Espaciado entre imágenes
+    gap: 2rem; 
 
     img {
-        width: 150px; // Ajustá el tamaño a gusto
+        width: 150px; 
         height: auto;
         object-fit: contain;
-        border-radius: 8px; // Si querés bordes redondeados como efecto
+        border-radius: 8px; 
     }
 }
 .carousel_actividades {

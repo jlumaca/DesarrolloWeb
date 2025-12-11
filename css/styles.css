@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -136,6 +135,31 @@ span {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
+}
+
+.ubicacion-container {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+
+.card-contacto-lateral {
+  background: white;
+  padding: 25px 30px;
+  width: 300px;
+  border-radius: 16px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.12);
+}
+
+.card-contacto-lateral h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.card-contacto-lateral p {
+  margin: 8px 0;
+  font-size: 16px;
 }
 
 footer {
@@ -734,7 +758,6 @@ section {
   .card_servicios_1 {
     margin-bottom: 2rem;
   }
-  /* --- ESTILOS DE BPS --- */
   #section_bps {
     flex-direction: column;
   }
@@ -742,7 +765,6 @@ section {
     width: 80%;
     max-width: 300px;
   }
-  /* --- ACA VA LO IMPORTANTE --- */
   .ubicacion-container {
     flex-direction: column;
     align-items: center;
@@ -796,31 +818,6 @@ section {
   footer {
     flex-shrink: 0;
   }
-}
-.ubicacion-container {
-  display: flex;
-  gap: 25px;
-  margin-top: 20px;
-  align-items: flex-start;
-}
-
-/* Card lateral */
-.card-contacto-lateral {
-  background: white;
-  padding: 25px 30px;
-  width: 300px; /* No fuerza altura → se adapta sola */
-  border-radius: 16px;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.12);
-}
-
-.card-contacto-lateral h3 {
-  margin-bottom: 15px;
-  font-size: 22px;
-}
-
-.card-contacto-lateral p {
-  margin: 8px 0;
-  font-size: 16px;
 }
 
 /*# sourceMappingURL=styles.css.map */
